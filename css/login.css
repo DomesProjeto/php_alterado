@@ -11,7 +11,8 @@ html, body {
     height: 100%; /* Garante que ocupem todo o viewport */
     margin: 0; /* Remove margens */
     padding: 0; /* Remove preenchimentos */
-    overflow: hidden; /* Impede que a tela role */
+    overflow: auto; /* Garante que a rolagem funcione */
+
 }
 
 #login-container {
