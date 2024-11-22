@@ -1,0 +1,158 @@
+@import url('header.css'); /* Importa o estilo do cabeçalho */
+
+body, html {
+    height: 100%; /* Define a altura para ocupar toda a viewport */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+body {
+    background: #e4e2dd; /* Define a cor de fundo do corpo */
+    font-family: 'Poppins', sans-serif; /* Define a família da fonte */
+}
+
+header {
+    background-color: #b9c1b2; /* Define a cor de fundo do cabeçalho */
+}
+
+#navbar {
+    width: 100%; /* Define a largura para ocupar toda a largura disponível */
+    display: flex; /* Define como flex container */
+    justify-content: space-between; /* Distribui os itens igualmente */
+    flex-direction: row; /* Define a direção dos itens como linha */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.btn-default {
+    border: none; /* Remove a borda */
+    display: block; /* Define como bloco */
+    margin: 0 1em; /* Define as margens */
+    background-color: #68834d; /* Define a cor de fundo */
+    border-radius: 0.75em; /* Define o raio da borda */
+    padding: 1em 1em; /* Define o preenchimento */
+    box-shadow: 0em 0em 0.625em 0.125em rgba(0, 0, 0, 0.1); /* Define a sombra */
+    cursor: pointer; /* Define o cursor */
+    transition: background-color .3s ease; /* Define a transição de cor de fundo */
+    height: 5em; /* Define a altura */
+}
+
+.btn-default:hover {
+    background-color: #a3ae98; /* Define a cor de fundo ao passar o mouse */
+}
+
+.btn-default a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 2rem; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define o peso da fonte */
+    color: #fff; /* Define a cor do texto */
+}
+
+.wrapper {
+    display: flex; /* Define como flex container */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding-top: 5%; /* Define o preenchimento superior */
+}
+
+.user-card {
+    display: flex; /* Define como flex container */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    background-color: #f0efe6; /* Define a cor de fundo */
+    border-radius: 1.875em; /* Define o raio da borda */
+    padding: 5em; /* Define o preenchimento */
+    width: 53.125em; /* Define a largura */
+    position: relative; /* Define a posição relativa */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+    box-shadow: 0 0.125em 1.25em -0.313em rgba(9, 34, 7, 0.5); /* Define a sombra */
+}
+
+.user-card:before {
+    content: ''; /* Adiciona conteúdo */
+    position: absolute; /* Define a posição absoluta */
+    height: 100%; /* Define a altura */
+    width: 10.813em; /* Define a largura */
+    background: #0c3507; /* Define a cor de fundo */
+    top: -9.375em; /* Define a posição superior */
+    left: -7.813em; /* Define a posição esquerda */
+    z-index: 0; /* Define a ordem de empilhamento */
+    transform: rotate(17deg); /* Define a rotação */
+}
+
+.user-card-img {
+    display: flex; /* Define como flex container */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 50%; /* Define a largura */
+    height: 18.75em; /* Define a altura */
+    position: relative; /* Define a posição relativa */
+}
+
+.user-card-img img {
+    width: auto; /* Define a largura automática */
+    height: 100%; /* Define a altura */
+    object-fit: cover; /* Define o ajuste do objeto */
+    position: absolute; /* Define a posição absoluta */
+    left: 50%; /* Define a posição esquerda */
+    top: 65%; /* Define a posição superior */
+    transform: translate(-50%, -50%); /* Define a translação */
+}
+
+.user-card-info {
+    text-align: center; /* Alinha o texto ao centro */
+    position: relative; /* Define a posição relativa */
+}
+
+.user-card-info h2 {
+    font-size: 2.188em; /* Define o tamanho da fonte */
+    margin: 0; /* Remove as margens */
+    margin-bottom: 1.25em; /* Define a margem inferior */
+    font-family: 'Georgia', sans-serif; /* Define a família da fonte */
+}
+
+.user-card-info p {
+    font-size: 1.125em; /* Define o tamanho da fonte */
+    margin-bottom: 0.625em; /* Define a margem inferior */
+    margin-top: 10px; /* Adicionado para garantir espaçamento entre elementos */
+}
+
+.user-card-info p span {
+    font-weight: 700; /* Define o peso da fonte */
+    margin-right: 0.625em; /* Define a margem à direita */
+    font-size: 1.25em; /* Define o tamanho da fonte */
+}
+
+@media only screen and (min-width: 31.25em) {
+    .user-card {
+        flex-direction: row; /* Define a direção dos itens como linha */
+        align-items: flex-start; /* Alinha os itens verticalmente */
+    }
+    .user-card-img {
+        margin-right: 5em; /* Define a margem à direita */
+        margin-bottom: 0; /* Remove a margem inferior */
+    }
+    .user-card-info {
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+}
+
+@media (max-width: 187.5em) {
+    .wrapper {
+        padding-top: 5%; /* Define o preenchimento superior */
+    }
+    .user-card:before {
+        width: 300%; /* Define a largura */
+        height: 12.5em; /* Define a altura */
+        transform: rotate(0); /* Remove a rotação */
+    }
+    .user-card-info h2 {
+        margin-top: 1.563em; /* Define a margem superior */
+        font-size: 2.188em; /* Define o tamanho da fonte */
+    }
+    .user-card-info p span {
+        display: block; /* Define como bloco */
+        margin-bottom: 0.938em; /* Define a margem inferior */
+        font-size: 1.125em; /* Define o tamanho da fonte */
+    }
+}

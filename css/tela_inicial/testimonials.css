@@ -1,0 +1,95 @@
+/* Estilos para a seção de depoimentos */
+#testimonials {
+    min-height: calc(100vh - 5.688em); /* Altura mínima da seção menos 5.688em */
+    display: flex; /* Flex container para centralizar conteúdo */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    gap: 3em; /* Espaçamento entre os elementos */
+}
+
+/* Estilos para os ícones de depoimentos */
+#testimonials_icones {
+    width: 31.25em; /* Largura dos ícones */
+    height: auto; /* Altura automática */
+}
+
+/* Estilos para o subtítulo da seção de depoimentos */
+#testimonials .section-subtitle {
+    font-size: 3rem; /* Tamanho da fonte */
+}
+
+/* Estilos para o conteúdo dos depoimentos */
+#testimonials_content {
+    width: 50%; /* Largura do conteúdo */
+}
+
+/* Estilos para o contêiner de feedbacks */
+#feedbacks {
+    display: flex; /* Flex container para os feedbacks */
+    flex-direction: column; /* Direção de coluna para empilhar os feedbacks */
+    gap: 1.25em; /* Espaçamento entre os feedbacks */
+    margin-bottom: 2.5em; /* Margem inferior */
+    margin-top: 1.875em; /* Margem superior */
+}
+
+/* Estilos para cada feedback individual */
+.feedback {
+    display: flex; /* Flex container para o feedback */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    gap: 1.25em; /* Espaçamento entre os elementos */
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 0.75em; /* Preenchimento */
+    border-radius: 0.75em; /* Raio da borda */
+    box-shadow: 0em 0em 0.75em 0.25em rgba(34, 131, 7, 0.73); /* Sombra */
+}
+
+/* Estilos para o avatar do feedback */
+.feedback-avatar {
+    width: 6.25em; /* Largura do avatar */
+    height: 6.25em; /* Altura do avatar */
+    border-radius: 100%; /* Borda circular */
+    object-fit: cover; /* Ajuste do conteúdo */
+}
+
+/* Estilos para o conteúdo do feedback */
+.feedback-content p {
+    display: flex; /* Flex container para o conteúdo do parágrafo */
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+}
+
+/* Estilos para o texto destacado no conteúdo do feedback */
+.feedback-content p span {
+    color: #E6C313; /* Cor do texto destacado */
+}
+
+/* Media query para telas menores que 73.125em (1170px) */
+@media screen and (max-width: 73.125em) {
+    #testimonials {
+        flex-direction: column; /* Altera para direção de coluna */
+    }
+    #testimonials .section-subtitle {
+        text-align: center; /* Centraliza texto */
+        font-size: 2.5rem; /* Tamanho da fonte */
+    }
+    #testimonials_content {
+        width: 70%; /* Largura do conteúdo */
+        display: flex; /* Flex container */
+        flex-direction: column; /* Direção de coluna */
+        align-items: center; /* Alinha itens ao centro verticalmente */
+    }
+}
+
+/* Media query para telas menores que 37.5em (600px) */
+@media screen and (max-width: 37.5em) {
+    #testimonials .section-subtitle {
+        font-size: 2rem; /* Tamanho da fonte */
+    }
+    #testimonials_content {
+        width: 100%; /* Largura total */
+    }
+
+    .feedback {
+        flex-direction: column; /* Direção de coluna para feedbacks */
+    }
+}

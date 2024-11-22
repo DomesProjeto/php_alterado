@@ -1,0 +1,92 @@
+/* Importa fontes da família Poppins do Google Fonts e outros arquivos CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css'); /* Importa o arquivo CSS do cabeçalho */
+@import url('home.css'); /* Importa o arquivo CSS da página inicial */
+@import url('menu.css'); /* Importa o arquivo CSS do menu */
+@import url('footer.css'); /* Importa o arquivo CSS do rodapé */
+
+* {
+    font-family: 'Poppins', sans-serif; /* Define a fonte Poppins para todos os elementos */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total e altura do elemento */
+}
+
+html {
+    scroll-behavior: smooth; /* Suaviza o scroll */
+}
+
+body {
+    background-color: #e4e2dd; /* Define a cor de fundo do corpo */
+}
+
+section {
+    padding: 1.75em 8%; /* Adiciona espaçamento ao redor das seções */
+}
+
+.btn-default {
+    border: none; /* Remove a borda do botão */
+    display: flex; /* Usa display flex para o layout do botão */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    background-color: #68834d; /* Define a cor de fundo do botão */
+    border-radius: 0.75em; /* Define bordas arredondadas */
+    padding: 0.625em 0.875em; /* Adiciona espaçamento interno */
+    font-weight: 600; /* Define o peso da fonte */
+    box-shadow: 0 0 0.625em 0.125em rgba(0,0,0,0.1); /* Adiciona sombra ao botão */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    transition: background-color .3s ease; /* Transição suave para mudança de cor de fundo */
+}
+
+.btn-default:hover {
+    background-color: #a3ae98; /* Muda a cor de fundo quando o botão é hover */
+}
+
+.btn-default a {
+    text-decoration: none; /* Remove a decoração de texto dos links dos botões */
+    font-size: 0.93rem; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define o peso da fonte */
+    color: #fff; /* Define a cor do texto */
+}
+
+.social-media-buttons {
+    display: flex; /* Usa display flex para o layout dos botões de mídia social */
+    gap: 1.125em; /* Espaçamento entre os botões de mídia social */
+}
+
+.social-media-buttons a {
+    display: flex; /* Usa display flex para o layout dos links de mídia social */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    width: 2.8125em; /* Define a largura dos botões de mídia social */
+    height: 2.5em; /* Define a altura dos botões de mídia social */
+    background-color: #fff; /* Define a cor de fundo dos botões de mídia social */
+    font-size: 1.25rem; /* Define o tamanho da fonte */
+    border-radius: 0.625em; /* Define bordas arredondadas */
+    text-decoration: none; /* Remove a decoração de texto */
+    color: #1d1d1d; /* Define a cor do texto */
+    box-shadow: 0 0 0.75em 0.25em rgba(0, 0, 0, 0.158); /* Adiciona sombra aos botões de mídia social */
+    transition: box-shadow .3s ease; /* Transição suave para a sombra */
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0 0 0.75em 0.5em rgba(0, 0, 0, 0.158); /* Aumenta a sombra quando hover */
+}
+
+.section-title {
+    color: #bba11e; /* Define a cor do título da seção */
+    font-size: 1.563rem; /* Define o tamanho da fonte do título */
+}
+
+.section-subtitle {
+    font-size: 2.1875rem; /* Define o tamanho da fonte do subtítulo da seção */
+}
+
+h2, p {
+    margin-bottom: 1.5em; /* Adiciona margem na parte inferior de h2 e p */
+}
+
+.info, .equipe {
+    padding: 1.25em; /* Adiciona espaçamento interno para as classes info e equipe */
+    box-sizing: border-box; /* Inclui o padding dentro do tamanho total da div */
+}

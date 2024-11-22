@@ -1,0 +1,92 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Importações dos arquivos CSS */
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('testimonials.css');
+@import url('footer.css');
+
+/* Estilos gerais para todos os elementos */
+* {
+    font-family: 'Poppins', sans-serif; /* Fonte Poppins para todos os elementos */
+    margin: 0; /* Zera margens */
+    padding: 0; /* Zera preenchimentos */
+    box-sizing: border-box; /* Mantém a caixa de modelo de borda */
+}
+
+/* Estilos para o elemento html */
+html {
+    scroll-behavior: smooth; /* Comportamento suave de rolagem */
+}
+
+/* Estilos para o corpo do documento */
+body {
+    background-color: #e4e2dd; /* Cor de fundo do corpo */
+}
+
+/* Estilos para elementos de seção */
+section {
+    padding: 1.75em 8%; /* Preenchimento das seções */
+}
+
+/* Estilos para botões com classe .btn-default */
+.btn-default {
+    border: none; /* Remove borda */
+    display: flex; /* Exibe como flex container */
+    background-color:  #68834d; /* Cor de fundo */
+    border-radius: 0.75em; /* Raio da borda */
+    padding: 0.625em 0.875em; /* Preenchimento */
+    font-weight: 600; /* Peso da fonte */
+    box-shadow: 0em 0em 0.625em 0.125em rgba(0,0,0,0.1); /* Sombra */
+    cursor: pointer; /* Cursor tipo ponteiro */
+    transition: background-color .3s ease; /* Transição suave de cor de fundo */
+}
+
+.btn-default:hover {
+    background-color:  #a3ae98; /* Cor de fundo ao passar o mouse */
+}
+
+.btn-default a {
+    text-decoration: none; /* Remove decoração de texto */
+    font-size: 0.93rem; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilos para grupo de botões de mídia social */
+.social-media-buttons {
+    display: flex; /* Exibe como flex container */
+    gap: 1.125em; /* Espaçamento entre os botões */
+}
+
+.social-media-buttons a {
+    display: flex; /* Exibe como flex container */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    justify-content: center; /* Centraliza conteúdo */
+    width: 2.813em; /* Largura */
+    height: 2.5em; /* Altura */
+    background-color: #ffff; /* Cor de fundo */
+    font-size: 1.25rem; /* Tamanho da fonte */
+    border-radius: 0.625em; /* Raio da borda */
+    text-decoration: none; /* Remove decoração de texto */
+    color: #1d1d1d; /* Cor do texto */
+    box-shadow: 0em 0em 0.75em 0.25em rgba(0, 0, 0, 0.158); /* Sombra */
+    transition: box-shadow .3s ease; /* Transição suave da sombra */
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0em 0em 0.75em 0.5em rgba(0, 0, 0, 0.158); /* Sombra ao passar o mouse */
+}
+
+/* Estilos para título de seção */
+.section-title {
+    color: #bba11e; /* Cor do título */
+    font-size: 1.563rem; /* Tamanho da fonte */
+}
+
+/* Estilos para subtítulo de seção */
+.section-subtitle {
+    font-size: 2.1875rem; /* Tamanho da fonte */
+}

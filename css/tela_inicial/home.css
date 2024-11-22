@@ -1,0 +1,92 @@
+/* Estilos para a seção home */
+#home {
+    display: flex; /* Exibe como flex container */
+    min-height: calc(100vh - 5.688em); /* Altura mínima da viewport menos 5.688em */
+    position: relative; /* Posição relativa */
+}
+
+/* Estilos para o call-to-action (cta) */
+#cta {
+    width: 35%; /* Largura */
+    display: flex; /* Exibe como flex container */
+    flex-direction: column; /* Direção de coluna */
+    gap: 1.75em; /* Espaçamento entre os elementos */
+    margin-top: 5%; /* Margem superior */
+}
+
+/* Estilos para o título no cta */
+#cta .title {
+    font-size: 3rem; /* Tamanho da fonte */
+    color: #7a9164; /* Cor do texto */
+}
+
+/* Estilos para parte do título no cta */
+#cta .title span {
+    color: #435730; /* Cor do texto */
+}
+
+/* Estilos para a descrição no cta */
+#cta .description {
+    font-size: 1.2rem; /* Tamanho da fonte */
+}
+
+/* Estilos para os botões no cta */
+#cta_buttons {
+    display: flex; /* Exibe como flex container */
+    gap: 1.5em; /* Espaçamento entre os elementos */
+}
+
+/* Estilos para links dentro dos botões no cta */
+#cta_buttons a {
+    text-decoration: none; /* Remove decoração de texto */
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Estilos para o banner */
+#banner {
+    display: flex; /* Exibe como flex container */
+    align-items: start; /* Alinha itens ao topo verticalmente */
+    justify-content: end; /* Alinha itens à direita horizontalmente */
+    width: 80%; /* Largura */
+}
+
+/* Estilos para a imagem dentro do banner */
+#banner img {
+    height: 85%; /* Altura */
+    width: fit-content; /* Largura ajustável ao conteúdo */
+    z-index: 2; /* Z-index */
+}
+
+/* Estilos para a forma decorativa */
+.shape {
+    background-color: #d0d5cb; /* Cor de fundo */
+    width: 50%; /* Largura */
+    height: 90%; /* Altura */
+    position: absolute; /* Posição absoluta */
+    border-radius: 40% 30% 0% 20%; /* Raio da borda */
+    top: 55; /* Posicionamento ao topo */
+    right: 0; /* Posicionamento à direita */
+    z-index: 1; /* Z-index */
+}
+
+/* Media query para telas menores que 73.125em (1170px) */
+@media screen and (max-width: 73.125em) {
+    #home {
+        min-height: 100%; /* Altura mínima de 100% da viewport */
+        padding-top: 0em; /* Padding superior */
+    }
+
+    /* Oculta elementos no banner */
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none; /* Oculta os elementos */
+    }
+
+    /* Ajusta o cta para ocupar toda a largura e centralizar conteúdo */
+    #cta {
+        width: 100%; /* Largura total */
+        text-align: center; /* Alinha texto ao centro */
+        align-items: center; /* Alinha itens ao centro verticalmente */
+    }
+}

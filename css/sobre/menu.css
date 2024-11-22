@@ -1,0 +1,176 @@
+/* Importa fontes e outros arquivos CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('footer.css');
+
+/* Estiliza todos os elementos básicos */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total e altura do elemento */
+}
+
+html {
+    scroll-behavior: smooth; /* Suaviza o scroll */
+}
+
+body {
+    background-color: #e4e2dd; /* Define a cor de fundo do corpo */
+}
+
+section {
+    padding: 1.75em 8%; /* Adiciona espaçamento ao redor das seções */
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68834d;
+    border-radius: 0.75em; /* Define bordas arredondadas */
+    padding: 0.625em 0.875em; /* Adiciona espaçamento interno */
+    font-weight: 600;
+    box-shadow: 0 0 0.625em 0.125em rgba(0,0,0,0.1); /* Adiciona sombra ao botão */
+    cursor: pointer;
+    transition: background-color .3s ease; /* Transição suave para mudança de cor de fundo */
+}
+
+.btn-default:hover {
+    background-color: #a3ae98; /* Muda a cor de fundo quando o botão é hover */
+}
+
+.btn-default a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff; /* Define a cor do texto */
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 1.125em; /* Espaçamento entre os botões de mídia social */
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.8125em; /* Define largura dos botões */
+    height: 2.5em; /* Define altura dos botões */
+    background-color: #fff;
+    font-size: 1.25rem;
+    border-radius: 0.625em; /* Define bordas arredondadas */
+    text-decoration: none;
+    color: #1d1d1d; /* Cor do texto */
+    box-shadow: 0 0 0.75em 0.25em rgba(0, 0, 0, 0.158); /* Adiciona sombra aos botões */
+    transition: box-shadow .3s ease; /* Transição suave para a sombra */
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0 0 0.75em 0.5em rgba(0, 0, 0, 0.158); /* Aumenta a sombra quando hover */
+}
+
+.section-title {
+    color: #bba11e;
+    font-size: 1.563rem; /* Define o tamanho da fonte */
+}
+
+.section-subtitle {
+    font-size: 2.1875rem; /* Define o tamanho da fonte */
+}
+
+h2, p {
+    margin-bottom: 1.5em; /* Adiciona margem na parte inferior de h2 e p */
+}
+
+.info, .equipe {
+    padding: 1.25em; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding dentro do tamanho total da div */
+}
+
+/* Estiliza o menu principal */
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Altura mínima do menu para ocupar toda a altura da viewport */
+}
+
+#buscados {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em; /* Espaçamento entre os elementos */
+    margin-top: 2em; /* Espaçamento acima do container */
+}
+
+.buscas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.25em; /* Bordas arredondadas */
+    gap: 1.125em; /* Espaçamento entre elementos internos */
+    width: 25%; /* Largura das divs buscas */
+    padding: 1.25em; /* Espaçamento interno */
+    background-color: #ffff;
+    box-shadow: 0 0 0.75em 0.25em rgba(34, 131, 7, 0.44); /* Sombra nas divs buscas */
+    position: relative; /* Posicionamento relativo para permitir posicionamento absoluto interno */
+    overflow: hidden; /* Oculta o conteúdo transbordante */
+}
+
+.buscas-tool {
+    position: absolute;
+    background-color: #493900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: #c8d6bc;
+    width: 4.375em; /* Largura do ícone */
+    height: 4.375em; /* Altura do ícone */
+    right: -0.625em; /* Posiciona à direita */
+    top: -0.625em; /* Posiciona no topo */
+    border-radius: 0 2.344em 0 2.656em; /* Bordas arredondadas específicas */
+}
+
+.buscas-description {
+    color: #493900;
+    text-align: center; /* Centraliza o texto */
+}
+
+.buscas-rate i {
+    color: #ffd416dd; /* Cor das estrelas de avaliação */
+}
+
+.buscas-price {
+    display: flex;
+    align-items: center;
+    gap: 1.25em; /* Espaçamento entre o preço e outros elementos */
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 73.125em) { /* Para telas menores que 1170px */
+    #buscados {
+        flex-wrap: wrap; /* Permite que os elementos quebrem linha */
+        justify-content: center; /* Centraliza os elementos */
+    }
+
+    .buscas {
+        width: calc(50% - 0.75em); /* Ajusta a largura das buscas em telas menores */
+    }
+}
+
+@media screen and (max-width: 40.625em) { /* Para telas menores que 650px */
+    .buscas {
+        width: 100%; /* As buscas ocupam 100% da largura em telas pequenas */
+    }
+
+    #menu .section-subtitle {
+        text-align: center; /* Centraliza o subtítulo da seção */
+    }
+}

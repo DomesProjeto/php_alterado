@@ -1,0 +1,27 @@
+/* Estilos para o rodapé */
+footer {
+    background-color: #5f9466c7; /* Cor de fundo */
+}
+
+/* Estilos para os itens no rodapé */
+#footer_items {
+    display: flex; /* Exibe como flex container */
+    justify-content: space-between; /* Espaçamento entre os elementos */
+    padding: 0em 8% 1.5em 8%; /* Preenchimento */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+}
+
+/* Estilos para o texto de direitos autorais */
+#copyright {
+    color: white; /* Cor do texto */
+    font-size: large; /* Tamanho da fonte */
+}
+
+/* Media query para telas menores que 37.5em (600px) */
+@media screen and (max-width: 37.5em) {
+    /* Ajusta a disposição dos itens no rodapé para coluna */
+    #footer_items {
+        flex-direction: column; /* Direção de coluna */
+        gap: 1.25em; /* Espaçamento entre os itens */
+    }
+}

@@ -1,0 +1,89 @@
+/* Estilos para o menu */
+#menu {
+    display: flex; /* Exibe como flex container */
+    flex-direction: column; /* Direção de coluna */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    justify-content: center; /* Centraliza conteúdo verticalmente */
+    min-height: 100vh; /* Altura mínima de 100% da altura da viewport */
+}
+
+/* Estilos para contêiner dos itens buscados */
+#buscados {
+    width: 100%; /* Largura total */
+    display: flex; /* Exibe como flex container */
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    gap: 1.5em; /* Espaçamento entre os itens */
+    margin-top: 2em; /* Margem superior */
+}
+
+/* Estilos para cada item buscado */
+.buscas {
+    display: flex; /* Exibe como flex container */
+    flex-direction: column; /* Direção de coluna */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    border-radius: 1.25em; /* Raio da borda */
+    gap: 1.125em; /* Espaçamento entre os elementos */
+    width: 25%; /* Largura */
+    padding: 1.25em; /* Preenchimento */
+    background-color: #ffff; /* Cor de fundo */
+    box-shadow: 0em 0em 0.75em 0.25em rgba(34, 131, 7, 0.44); /* Sombra */
+    position: relative; /* Posição relativa */
+    overflow: hidden; /* Esconde conteúdo que extrapola */
+}
+
+/* Estilos para a ferramenta de busca nos itens */
+.buscas-tool {
+    position: absolute; /* Posição absoluta */
+    background-color: #493900; /* Cor de fundo */
+    display: flex; /* Exibe como flex container */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    justify-content: center; /* Centraliza conteúdo */
+    font-size: 1.563rem; /* Tamanho da fonte */
+    color: #c8d6bc; /* Cor do texto */
+    width: 4.375em; /* Largura */
+    height: 4.375em; /* Altura */
+    right: -0.625em; /* Posicionamento à direita */
+    top:  -0.625em; /* Posicionamento ao topo */
+    border-radius: 0em 2.344em 0em 2.656em; /* Raio da borda */
+}
+
+/* Estilos para a descrição nos itens buscados */
+.buscas-description {
+    color: #493900; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+}
+
+/* Estilos para a taxa de avaliação nos itens buscados */
+.buscas-rate i {
+    color: #ffd416dd; /* Cor do ícone de avaliação */
+}
+
+/* Estilos para o preço nos itens buscados */
+.buscas-price {
+    display: flex; /* Exibe como flex container */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    gap: 1.25em; /* Espaçamento entre os elementos */
+}
+
+/* Media query para telas menores que 73.125em (1170px) */
+@media screen and (max-width: 73.125em) {
+    #buscados {
+        flex-wrap: wrap; /* Quebra de linha */
+        justify-content: center; /* Centraliza conteúdo horizontalmente */
+    }
+
+    .buscas {
+        width: calc(50% - 0.75em); /* Largura 50% com espaçamento entre os itens */
+    }
+}
+
+/* Media query para telas menores que 40.625em (650px) */
+@media screen and (max-width: 40.625em) {
+    .buscas {
+        width: 100%; /* Largura total */
+    }
+
+    #menu .section-subtitle {
+        text-align: center; /* Centraliza texto */
+    }
+}

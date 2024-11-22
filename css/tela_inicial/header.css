@@ -1,0 +1,92 @@
+/* Estilos para o cabeçalho */
+header {
+    width: 100%; /* Largura total */
+    padding: 1.75em 8%; /* Preenchimento */
+    position: sticky; /* Posição fixa */
+    top: 0; /* Alinha ao topo */
+    background-color: #b9c1b2; /* Cor de fundo */
+    z-index: 3; /* Z-index */
+}
+
+/* Estilos para a barra de navegação */
+#navbar {
+    width: 100%; /* Largura total */
+    display: flex; /* Exibe como flex container */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    justify-content: space-between; /* Espaçamento entre os elementos */
+}
+
+/* Estilos para o logo na barra de navegação */
+#nav_logo {
+    font-size: 1.5em; /* Tamanho da fonte */
+    color: #488745; /* Cor do texto */
+}
+
+/* Estilos para a lista de navegação na barra */
+#nav_list {
+    display: flex; /* Exibe como flex container */
+    list-style: none; /* Remove marcadores de lista */
+    gap: 3em; /* Espaçamento entre os itens */
+}
+
+/* Estilos para itens de navegação */
+.nav-item a {
+    text-decoration: none; /* Remove decoração de texto */
+    color: #1d1d1d; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
+}
+
+/* Estilos para item ativo na navegação */
+.nav-item.active a {
+    color: #1d1d1d; /* Cor do texto */
+    border-bottom: 0.188em solid #126d1f; /* Borda inferior */
+}
+
+/* Estilos para o botão mobile */
+#mobile_btn {
+    display: none; /* Oculta por padrão */
+}
+
+/* Estilos para o menu mobile */
+#mobile_menu {
+    display: none; /* Oculta por padrão */
+}
+
+/* Media query para telas menores que 73.125em (1170px) */
+@media screen and (max-width: 73.125em) {
+    /* Oculta lista de navegação e botão padrão */
+    #nav_list,
+    #navbar .btn-default {
+        display: none; /* Oculta os elementos */
+    }
+
+    /* Exibe botão mobile */
+    #mobile_btn {
+        display: block; /* Exibe */
+        border: none; /* Remove borda */
+        background-color: transparent; /* Fundo transparente */
+        font-size: 1.5rem; /* Tamanho da fonte */
+        cursor: pointer; /* Cursor tipo ponteiro */
+    }
+
+    /* Exibe menu mobile quando ativo */
+    #mobile_menu.active {
+        display: flex; /* Exibe como flex container */
+        flex-direction: column; /* Direção de coluna */
+        align-items: center; /* Alinha itens ao centro verticalmente */
+    }
+
+    /* Estilos para lista de navegação no menu mobile */
+    #mobile_nav_list {
+        display: flex; /* Exibe como flex container */
+        flex-direction: column; /* Direção de coluna */
+        gap: 0.75em; /* Espaçamento entre os itens */
+        margin: 0.75em 0em; /* Margem */
+    }
+
+    /* Estilos para itens de navegação no menu mobile */
+    #mobile_nav_list .nav-item {
+        list-style: none; /* Remove marcadores de lista */
+        text-align: center; /* Alinha texto ao centro */
+    }
+}
