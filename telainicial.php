@@ -121,7 +121,115 @@
                 <img src="img/tela_inicial/home.png" alt="">
             </div>
         </section>
-        <!-- Restante do conteúdo permanece o mesmo -->
+          <!-- Seção Serviços -->
+          <section id="menu">
+            <!-- Título da seção -->
+            <h2 class="section-title">Áreas de Trabalho</h2>
+            <!-- Subtítulo da seção -->
+            <h3 class="section-subtitle">Inscreva-se para oferecer serviços em</h3>
+            <!-- Div para os serviços mais buscados -->
+            <div id="buscados">
+                <!-- Cada serviço com suas informações -->
+                <div class="buscas">
+                    <img src="img/tela_inicial/serviço1.png" class="buscas-image" alt="">
+                    <h3 class="buscas-title">
+                        Serviços de Elétrica
+                    </h3>
+                    <span class="buscas-description">
+                        Ofereça serviços de instalação e manutenção elétrica.
+                    </span>
+                </div>
+                <div class="buscas">
+                    <img src="img/tela_inicial/serviço2.png" class="buscas-image" alt="">
+                    <h3 class="buscas-title">
+                        Serviços de Mudanças
+                    </h3>
+                    <span class="buscas-description">
+                        Ajudar com montagem, desmontagem e transporte de móveis.
+                    </span>
+                    
+                </div>
+                <div class="buscas">
+                    <img src="img/tela_inicial/serviço3.png" class="buscas-image" alt="">
+                    <h3 class="buscas-title">
+                        Serviços de Pintura
+                    </h3>
+                    <span class="buscas-description">
+                        Pintura de móveis e espaços residenciais.
+                    </span>
+                    
+                </div>
+                <div class="buscas">
+                    <img src="img/menu/serviço4.png" class="buscas-image" alt="">
+                    <h3 class="buscas-title">
+                        Serviços de Diarista
+                    </h3>
+                    <span class="buscas-description">
+                        Limpeza residencial e organização de ambientes.
+                    </span>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Avaliações -->
+        <section id="testimonials">
+            <!-- Imagem de comentários -->
+            <img src="img/tela_inicial/comentários.png" id="testimonials_comentários" alt="">
+            <div id="testimonials_content">
+                <!-- Título da seção -->
+                <h2 class="section-title">
+                    Feedbacks dos Clientes da Plataforma
+                </h2>
+                <!-- Subtítulo da seção -->
+                <h3 class="section-subtitle">
+                    Retorno dos trabalhos
+                </h3>
+                <!-- Div para os feedbacks -->
+                <div id="feedbacks">
+                    <!-- Cada feedback com suas informações -->
+                    <div class="feedback">
+                        <img src="img/tela_inicial/icon1.png" class="feedback-avatar"alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Carlos Almeida
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Achei aqui no app um ótimo eletricista, ele fez a rede elétrica da nova casa da minha Mãe. Contratei um pintor agora e gostei muito da facilidade do aplicativo."
+                            </p>
+                        </div>
+                    </div>
+                    <div id="feedbacks">
+                        <div class="feedback">
+                            <img src="img/tela_inicial/icon2.jpg" class="feedback-avatar"alt="">
+                            <div class="feedback-content">
+                                <p>
+                                    Bianca Gomes
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </p>
+                                <p>
+                                    "Cheguei na cidade recentemente e esse app tem salvado a minha vida. Já contratei várias vezes e recomendo principalmente o serviço de limpeza deles"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     </main>
 
     <!-- Rodapé da página -->
