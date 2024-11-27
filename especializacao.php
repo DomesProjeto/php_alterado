@@ -6,7 +6,7 @@
     <title>Escolha um serviço</title> <!-- Título da página -->
     <link rel="stylesheet" href="css/especializacao.css"> <!-- Link para o arquivo CSS externo -->
     <script src="js/especializacao.js"></script> <!-- Link para o arquivo JavaScript externo -->
-    <link rel="shortcut icon" href="img/menu/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
     <div class="container"> <!-- Container principal para o conteúdo da página -->
@@ -75,6 +75,6 @@
         <input type="text" id="campoTexto" name="nome"> <!-- Campo de texto para informações adicionais -->
         
         
-        <a href="menu.php" class="button">Concluir cadastro</a> <!-- Link estilizado como botão para concluir o cadastro -->
+        <a href="index.php" class="button">Concluir cadastro</a> <!-- Link estilizado como botão para concluir o cadastro -->
 </body>
 </html>

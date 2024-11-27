@@ -1,47 +1,69 @@
-//Funcoes que tratam de acoes nos botoes 
+// Função para adicionar um horário
+function adicionarHorario(dia) {
+    let horario = prompt("Digite o horário (ex: 11:00 - 14:00):");
 
+    if (horario) {
+        const li = document.createElement("li");
+        li.textContent = horario;
 
-function transicao(){
-    var transitionScreen = document.querySelector(".transition-screen");
-    transitionScreen.classList.add("hidden");
-    setTimeout(function() {
-        transitionScreen.remove();
-    }, 1000);
-    window.location.href = "telainicial.php";
+        // Criar o botão de remover
+        const removerBtn = document.createElement("button");
+        removerBtn.textContent = "Remover";
+        removerBtn.onclick = function () {
+            li.remove();
+            removerHorarioNoBanco(dia, horario); // Remove do banco
+        };
+
+        li.appendChild(removerBtn);
+
+        document.getElementById(dia).appendChild(li);
+        salvarHorarioNoBanco(dia, horario); // Salva no banco
+    }
 }
 
+// Função para salvar o horário no banco de dados
+function salvarHorarioNoBanco(dia, horario) {
+    const data = {
+        dia: dia,
+        horario: horario
+    };
 
-document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(transicao , 2000); // s (em milisegundos)
-  });
-
-document.addEventListener("DOMContentLoaded", function() {
-    
-});
-  
-  document.getElementById('login-form').addEventListener('submit', redirectToMenu);
-  //faz o menu funcionar
-
-function controlarMenu(){
-  const dropdownMenu = document.getElementById('dropdown-menu');
-  dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    fetch('save.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Horário salvo com sucesso:", data);
+    })
+    .catch(error => {
+        console.error("Erro ao salvar horário:", error);
+    });
 }
 
+// Função para remover o horário no banco de dados
+function removerHorarioNoBanco(dia, horario) {
+    const data = {
+        dia: dia,
+        horario: horario
+    };
 
-function adcionaEventoClickMenu(){
-  const menuIcon = document.getElementById('menu-icon');
-  menuIcon.addEventListener('click', function() {
-   controlarMenu(); 
- });
-
-function redirectToMenu(event) {
-  event.preventDefault(); 
-  window.location.href = 'menu.html'; //Manda pro menu
+    fetch('remove.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Horário removido com sucesso:", data);
+        alert('Horário removido com sucesso!');
+    })
+    .catch(error => {
+        console.error("Erro ao remover horário:", error);
+    });
 }
-
-}
-//todos os eventos de acao de click ficaram aqui
-adcionaEventoClickMenu();
-
- 
-

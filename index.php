@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Tela de Transição</title> 
   <link rel="stylesheet" href="css/styles.css"> <!-- Importação do arquivo CSS -->
-  <script src="js/script.js" defer></script> <!-- Importação do arquivo JavaScript com atributo defer -->
+  <script src="js/transicao.js" defer></script> <!-- Importação do arquivo JavaScript com atributo defer -->
   <link rel="shortcut icon" href="img/tela_inicial/logo.png" type="image/x-icon"> <!-- Ícone da página -->
 </head>
 

@@ -11,8 +11,7 @@ html, body {
     height: 100%; /* Garante que ocupem todo o viewport */
     margin: 0; /* Remove margens */
     padding: 0; /* Remove preenchimentos */
-    overflow: auto; /* Garante que a rolagem funcione */
-
+    overflow: hidden; /* Impede que a tela role */
 }
 
 #login-container {
@@ -38,7 +37,7 @@ html, body {
     border-radius: 0.5em; /* Define o raio da borda */
     gap: 1.5em; /* Define o espaçamento entre os elementos */
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3); /* Define a sombra */
-    max-width: 400px; /* Define largura máxima */
+    max-width: 500px; /* Define largura máxima */
     width: 90%; /* Garante que ele seja responsivo */
 }
 
@@ -139,4 +138,14 @@ html, body {
     font-size: 0.93rem; /* Define o tamanho da fonte */
     font-weight: 500; /* Define o peso da fonte */
     color: #fff; /* Define a cor do texto */
+}
+.errors {
+    color: red;
+    font-weight: bold;
+}
+.errors ul {
+    list-style-type: none;
+}
+.errors li {
+    margin-bottom: 10px;
 }

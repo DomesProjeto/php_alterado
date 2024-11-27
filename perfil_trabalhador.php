@@ -16,7 +16,7 @@
     <!-- Link para a folha de estilo personalizada -->
     <link rel="stylesheet" href="css/perfil.css">
     <!-- Atalho para o ícone do site -->
-    <link rel="shortcut icon" href="img/tela_inicial/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         <!-- Navegação principal -->
         <nav id="navbar">
             <!-- Logo da navegação que redireciona para a página do menu -->
-            <a href="menu.php"><img src="img/menu/logo.png" alt="Logo" id="nav_logo"></a>
+            <a href="menu.php"><img src="img/logo.png" alt="Logo" id="nav_logo"></a>
             <!-- Botão para editar o perfil -->
             <button class="btn-default">
                 <a href="editar_trabalhador.php">Editar</a>
@@ -37,7 +37,7 @@
         <div class="user-card">
             <!-- Imagem do usuário -->
             <div class="user-card-img">
-                <img src="img/perfilexpositivo/avatar2.png" alt="Foto de Carlos Nogueira">
+                <img src="img/avatar2.png" alt="Foto de Carlos Nogueira">
             </div>
             <!-- Informações do usuário -->
             <div class="user-card-info">

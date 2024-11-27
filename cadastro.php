@@ -1,3 +1,56 @@
+<?php
+// Habilitar exibição de erros
+
+// Incluir arquivo de conexão com o banco de dados
+include 'php/db_connection.php';
+
+global $conn;
+
+// Verificar se o formulário foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Verificar se o campo 'email' e 'password' existem
+    if (isset($_POST['email']) && isset($_POST['password'])) {
+
+        // Sanitizar e validar o e-mail
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // Sanitiza o e-mail
+        $email = filter_var($email, FILTER_VALIDATE_EMAIL); // Valida o e-mail
+
+        $primeiro_nome = $_POST['firstname']; // Sanitiza o primeiro nome
+
+        $sobrenome = $_POST['lastname']; // Sanitiza o sobrenome
+
+        $celular = $_POST['number'];
+
+        $password = $_POST['password']; // Sanitiza a senha
+
+        $genero = $_POST['gender']; // Sanitiza o gênero
+
+
+
+        try{
+            // Preparar a consulta para buscar o e-mail no banco de dados
+            $stmt = "INSERT INTO `usuarios` (`id`, `primeiro_nome`, `sobrenome`, `email`, `celular`, `senha`, `genero`, `cep`, `estado`, `municipio`, `bairro`, `numero`, `complemento`, `foto_perfil`) VALUES (null, :primeiro_nome, :sobrenome, :email, :celular, :senha, null, null, null, null, null, null, null, null)";
+            $stmt = $conn->prepare($stmt);
+            $stmt->bindParam(":primeiro_nome", $primeiro_nome);
+            $stmt->bindParam(":sobrenome", $sobrenome);
+            $stmt->bindParam(":email", $email);
+            $stmt->bindParam(":celular", $celular);
+            $stmt->bindParam(":senha", $password);
+            $stmt->execute();
+
+            session_start();
+            $_SESSION['email'] = $email;
+            header('Location: trabalhador.php');
+        }
+        catch(PDOException $e){
+            echo 'Erro: ' . $e->getMessage();
+        }
+    }
+}
+?>
+
+
+
 <!DOCTYPE html> 
 <html lang="pt-br"> 
 
@@ -6,7 +59,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag para configuração de viewport -->
     <link rel="stylesheet" href="css/cadastro.css"> <!-- Link para arquivo CSS externo -->
     <title>Formulario de cadastro</title> <!-- Título da página -->
-    <link rel="shortcut icon" href="img/tela_inicial/logo.png" type="image/x-icon"> <!-- Ícone da página -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"> <!-- Ícone da página -->
+    <!--<script src="js/cadastro.js"></script> -->
 </head> <!-- Fim da seção de cabeçalho -->
 
 <body> <!-- Início do corpo da página -->
@@ -15,7 +69,7 @@
             <img src="img/logo2.png"> <!-- Imagem do logotipo -->
         </div>
         <div class="form"> <!-- Div para o formulário de cadastro -->
-            <form action="#"> <!-- Formulário com método de ação indefinido -->
+            <form method="POST"> <!-- Formulário com método de ação indefinido -->
                 <div class="form-header"> <!-- Div para cabeçalho do formulário -->
                     <div class="title"> <!-- Div para título -->
                         <h1>Cadastre-se</h1> <!-- Título principal -->
@@ -72,11 +126,13 @@
                 </div>
 
                 <div class="continue-button"> <!-- Div para botões de continuação -->
-                    <button><a href="trabalhador.php">Continuar</a></button> <!-- Botão com link para página de trabalhador -->
+                 <!-- Botão com link para página de trabalhador -->
+                    <!-- <button><a href="trabalhador.php">Continuar</a></button> -->
+                    <button type="submit">Continuar</button>
                 </div>
             </form> <!-- Fim do formulário -->
         </div> <!-- Fim da div do formulário -->
     </div> <!-- Fim da div principal -->
 </body> <!-- Fim do corpo da página -->
 
-</html> <!-- Fim da tag HTML -->
+</html> 

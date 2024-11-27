@@ -1,0 +1,129 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ceceb9; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 75em;
+    margin: 1.25em auto;
+    padding: 1.25em;
+    background-color: #ffffff;
+    border-radius: 0.625em;
+    box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 1.25em;
+    padding: 0.625em 1.25em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #7a9164;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #7db300;
+}
+
+#current-time {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #333;
+    background-color: #75974988;
+    padding: 0.625em;
+    border-radius: 0.3125em;
+    text-align: center;
+    margin-bottom: 1.25em;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.625em;
+    border: 0.0625em solid #60a03b; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.25em;
+}
+
+thead {
+    background-color: #89b48d;
+    color: #fff;
+}
+
+thead th {
+    padding: 0.625em;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    padding: 0.625em;
+    border: 0.0625em solid #ddd;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #current-time {
+        font-size: 1em;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    thead th,
+    tbody td {
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25em;
+    }
+
+    #current-time {
+        font-size: 0.9em;
+    }
+
+    .back-button {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
