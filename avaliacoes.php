@@ -8,10 +8,9 @@
     <!-- Adicionando o link para o FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/avaliacoes.css"> <!-- Importando o arquivo CSS -->
+    <link rel="stylesheet" href="css/avaliacao.css"> <!-- Importando o arquivo CSS -->
 </head>
 <body>
-
     <div class="container">
         <h1>Avaliações que você Recebeu</h1>
 

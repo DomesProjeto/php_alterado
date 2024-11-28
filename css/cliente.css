@@ -1,12 +1,109 @@
-/* Estilo base */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ceceb9; 
-    margin: 0;
-    padding: 0;
+/* Variáveis de cor */
+:root {
+    --blue: #007bff;
+    --white: #ffffff;
+    --gray: #f4f4f4;
 }
 
-.container {
+/* Reset e estilos base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ceceb9;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Define um layout flexível */
+}
+
+
+.container2 {
+    position: relative; /* Permite o uso de margin */
+    width: 80%; /* Ajuste conforme necessário */
+    max-width: 1200px; /* Define um limite de largura */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border: 1px solid #ccc; /* Mantém a borda */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Garante o fundo branco */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Estética opcional */
+}
+
+/* Navegação lateral */
+.navigation {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: var(--blue);
+    transition: width 0.5s ease;
+    color: var(--white);
+    z-index: 1000;
+    border-left: 5px solid var(--blue);
+    overflow: hidden;
+}
+
+.navigation.active {
+    width: 80px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.navigation ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px;
+}
+
+.navigation ul li:hover {
+    background-color: var(--white);
+}
+
+.navigation ul li a:hover {
+    color: var(--blue);
+}
+
+.navigation ul li a .icon {
+    min-width: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.navigation ul li a .title {
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+/* Contêiner principal */
+.main-content {
+    margin-left: 300px; /* Espaço reservado para a navegação */
+    padding: 20px;
+    width: calc(100% - 300px); /* Ocupa o restante da tela */
+    transition: margin-left 0.5s, width 0.5s;
+    background-color: var(--gray);
+}
+
+.navigation.active ~ .main-content {
+    margin-left: 80px; /* Ajusta quando a navegação está contraída */
+    width: calc(100% - 80px);
+}
+
+/* Container interno estilizado */
+.container2 {
     max-width: 75em;
     margin: 1.25em auto;
     padding: 1.25em;
@@ -49,8 +146,7 @@ h1 {
     margin-bottom: 1.25em;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 0.625em;
-    border: 0.0625em solid #60a03b; 
+    border: 0.0625em solid #60a03b;
 }
 
 table {
@@ -82,9 +178,9 @@ tbody td {
     border: 0.0625em solid #ddd;
 }
 
-/* Ajustes de responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
-    .container {
+    .container2 {
         padding: 1em;
     }
 

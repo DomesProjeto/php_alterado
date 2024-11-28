@@ -6,10 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Clientes Ativos</title>
     <link rel="stylesheet" href="css/cliente.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
     <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-Domes"></ion-icon>
+                        </span>
+                        <span class="title">Domes - Serviços</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="menu.php">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Painel de Controle</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="clientes.php">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Seus Clientes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="avaliacoes.php">
+                        <span class="icon">
+                            <ion-icon name="star-outline"></ion-icon>
+                        </span>
+                        <span class="title">Avaliações</span>
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a href="trabalho.php">
+                        <span class="icon">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </span>
+                        <span class="title">Seus Trabalhos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="agenda.php">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sua Agenda</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="configuracoes.php">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ajuda.php">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Ajuda</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container2">
+    
         <!-- Exibição do dia e hora atuais -->
         <div id="current-time" class="current-time"></div>
         
@@ -31,6 +113,8 @@
             </tbody>
         </table>
     </div>
+
+    
     <script src="js/cliente.js"></script>
 </body>
 

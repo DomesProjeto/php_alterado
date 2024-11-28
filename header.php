@@ -8,6 +8,8 @@
 </head>
 <body>
 <nav id="navbar">
-    <img src="img/logo.png" alt="Descrição da imagem" id="nav_logo"> 
+    <a href="menu.php">
+        <img src="img/logo.png" alt="Descrição da imagem" id="nav_logo"> 
+    </a>
 </nav>
 
