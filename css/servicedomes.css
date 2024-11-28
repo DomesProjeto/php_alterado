@@ -6,7 +6,7 @@
         }
 
         header {
-            background-color: #737A5D;
+            background-color: #5f9466c7;
             color: #fff;
             padding: 10px 20px;
             text-align: center;
@@ -18,7 +18,7 @@
             right: 20px; /* Margem do lado direito */
             transform: translateY(-50%); /* Centraliza verticalmente */
             background-color: white;
-            color: #497a4a;
+            color: #5f9466c7;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -91,7 +91,7 @@
 
         .stat h3 {
             font-size: 2rem;
-            color: #854510;
+            color: #054916;
         }
 
         .plans {
@@ -126,7 +126,7 @@
         }
 
         .faq {
-            background-color: #C5BEAB;
+            background-color: #5f9466c7;
             padding: 20px;
             border-radius: 8px;
             margin: 20px 0;
@@ -136,6 +136,7 @@
             font-size: 1.8rem;
             margin-bottom: 20px;
             text-align: center;
+            color: #ffffff;
         }
 
         .faq-item {
@@ -146,7 +147,7 @@
             background: none;
             border: none;
             font-size: 1.1rem;
-            color: #5D624C;
+            color: #ffffff;
             cursor: pointer;
             text-align: left;
             width: 100%;
@@ -158,7 +159,7 @@
         .faq-answer {
             display: none;
             font-size: 0.9rem;
-            color: #333;
+            color: #a8ddc9;
             margin-top: 5px;
             font-weight: bold;
         }
@@ -180,7 +181,7 @@
         }
 
         .ad-banner .btn-red {
-            background-color: #9CA089;
+            background-color: #5f9466c7;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -189,15 +190,15 @@
         }
 
         .ad-banner .btn-red:hover {
-            background-color: #868B6B;
+            background-color: #5f9466c7;
         }
 
         footer {
-            background-color: #a0918952;
+            background-color: #5f9466c7;
             padding: 20px;
             margin-top: 20px;
             font-size: 0.9rem;
-            color: #666;
+            color: #ffffff;
         }
 
         .footer-columns {
@@ -220,7 +221,7 @@
         }
 
         .footer-columns a {
-            color: #333;
+            color: #ffffff;
             text-decoration: none;
         }
 
@@ -228,7 +229,7 @@
             text-align: center;
             margin-top: 20px;
             font-size: 0.8rem;
-            color: #807e7e;
+            color: #ffffffc7;
         }
 
         .btn-large {
@@ -238,7 +239,7 @@
             font-size: 20px; /* Fonte grande para destaque */
             font-weight: bold; /* Texto destacado */
             color: white; /* Texto branco */
-            background-color: #5D624C; /* Verde escuro */
+            background-color: #5f9466c7; /* Verde escuro */
             border: none; /* Sem bordas */
             border-radius: 10px; /* Cantos arredondados */
             cursor: pointer; /* Cursor de mão ao passar sobre o botão */
@@ -249,6 +250,13 @@
         .btn-large:hover {
             background-color: #9cad6a; /* Verde mais escuro ao passar o mouse */
         }
+        .button-group {
+            display: flex;               /* Torna os botões lado a lado */
+            gap: 10px;                   /* Espaço entre os botões */
+            justify-content: center;     /* Centraliza os botões horizontalmente */
+            margin-top: 20px;            /* Adiciona espaço acima dos botões */
+        }
+        
         /* Oculta a resposta por padrão */
         .faq-answer {
             display: none;

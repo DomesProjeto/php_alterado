@@ -14,7 +14,6 @@ body {
     display: flex; /* Define um layout flexível */
 }
 
-
 .container2 {
     position: relative; /* Permite o uso de margin */
     width: 80%; /* Ajuste conforme necessário */
@@ -40,7 +39,7 @@ body {
 }
 
 .navigation.active {
-    width: 80px;
+    width: 60px;
 }
 
 .navigation ul {
@@ -86,20 +85,6 @@ body {
 .navigation ul li a .title {
     padding-left: 10px;
     white-space: nowrap;
-}
-
-/* Contêiner principal */
-.main-content {
-    margin-left: 300px; /* Espaço reservado para a navegação */
-    padding: 20px;
-    width: calc(100% - 300px); /* Ocupa o restante da tela */
-    transition: margin-left 0.5s, width 0.5s;
-    background-color: var(--gray);
-}
-
-.navigation.active ~ .main-content {
-    margin-left: 80px; /* Ajusta quando a navegação está contraída */
-    width: calc(100% - 80px);
 }
 
 /* Container interno estilizado */
@@ -200,20 +185,38 @@ tbody td {
     tbody td {
         padding: 0.5em;
     }
+
+    .menu-toggle {
+        display: block; /* Exibe o botão de menu */
+        font-size: 2em;
+        background: none;
+        border: none;
+        color: var(--blue);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navigation {
+        display: none; /* Esconde a navegação inicialmente */
+    }
+
+    .navigation.active {
+        display: block; /* Mostra quando ativada */
+        width: 200px; /* Largura ajustada */
+    }
+
+    .navigation ul li a .title {
+        display: none; /* Esconde os títulos nas telas menores */
+    }
+
+    .navigation {
+        width: 60px;
+    }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 1.25em;
-    }
-
-    #current-time {
-        font-size: 0.9em;
-    }
-
     .back-button {
         width: 100%;
-        text-align: center;
         font-size: 0.9em;
     }
 
@@ -221,5 +224,14 @@ tbody td {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+    }
+
+    thead th, tbody td {
+        font-size: 0.9em;
+    }
+
+    .container2 {
+        padding: 10px;
+        width: 100%;
     }
 }

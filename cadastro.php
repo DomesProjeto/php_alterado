@@ -1,4 +1,4 @@
-<?php
+<?php 
 // Habilitar exibição de erros
 
 // Incluir arquivo de conexão com o banco de dados
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         try{
             // Preparar a consulta para buscar o e-mail no banco de dados
-            $stmt = "INSERT INTO `usuarios` (`id`, `primeiro_nome`, `sobrenome`, `email`, `celular`, `senha`, `genero`, `cep`, `estado`, `municipio`, `bairro`, `numero`, `complemento`, `foto_perfil`) VALUES (null, :primeiro_nome, :sobrenome, :email, :celular, :senha, null, null, null, null, null, null, null, null)";
+            $stmt = "INSERT INTO usuarios (id, primeiro_nome, sobrenome, email, celular, senha, genero, cep, estado, municipio, bairro, numero, complemento, foto_perfil) VALUES (null, :primeiro_nome, :sobrenome, :email, :celular, :senha, null, null, null, null, null, null, null, null)";
             $stmt = $conn->prepare($stmt);
             $stmt->bindParam(":primeiro_nome", $primeiro_nome);
             $stmt->bindParam(":sobrenome", $sobrenome);
@@ -135,4 +135,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div> <!-- Fim da div principal -->
 </body> <!-- Fim do corpo da página -->
 
-</html> 
+</html>

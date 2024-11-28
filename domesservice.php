@@ -64,7 +64,6 @@
                 <button class="faq-question">Como posso definir meu preço por serviço?</button>
                 <p class="faq-answer">Você pode definir o valor com base no mercado e sua experiência. A plataforma oferece sugestões, mas o valor final é sua escolha.</p>
             </div>
-            <a href="#" class="help-link">Ir para a Central de Ajuda</a>
         </section>
 
         <!-- Banner Promocional -->

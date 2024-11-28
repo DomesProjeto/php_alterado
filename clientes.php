@@ -7,8 +7,6 @@
     <title>Lista de Clientes Ativos</title>
     <link rel="stylesheet" href="css/cliente.css">
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
@@ -51,7 +49,6 @@
                     </a>
                 </li>
 
-                
                 <li>
                     <a href="trabalho.php">
                         <span class="icon">
@@ -114,6 +111,14 @@
         </table>
     </div>
 
+    <!-- Botão de menu (mobile) -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navigation').classList.toggle('active');
+        }
+    </script>
     
     <script src="js/cliente.js"></script>
 </body>
