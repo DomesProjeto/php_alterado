@@ -1,0 +1,193 @@
+/* Reset de estilos para garantir uma base limpa */
+* {
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove paddings padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui borda e padding no tamanho total do elemento */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #f2f2f2; /* Define a cor de fundo do corpo da página */
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da janela */
+    margin: 0; /* Remove margem do corpo */
+}
+
+.container {
+    max-width: 50em; /* Define a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    background-color: #fff; /* Define a cor de fundo do contêiner */
+    padding: 1.25em; /* Define padding interno */
+    border-radius: 0.3125em; /* Define bordas arredondadas */
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1); /* Adiciona sombra ao contêiner */
+    margin-bottom: 1.25em; /* Adiciona margem inferior */
+}
+
+h1, h2, h3, h4 {
+    color: #17af12; /* Define a cor do texto */
+    margin-bottom: 0.625em; /* Adiciona margem inferior */
+}
+
+fieldset {
+    border: 0.0625em solid #ccc; /* Define borda do fieldset */
+    padding: 0.625em; /* Define padding interno */
+    margin-bottom: 1.25em; /* Adiciona margem inferior */
+    border-radius: 0.3125em; /* Define bordas arredondadas */
+}
+
+legend {
+    font-weight: bold; /* Define texto em negrito */
+    margin-bottom: 0.625em; /* Adiciona margem inferior */
+}
+
+label {
+    display: block; /* Exibe o label como um bloco */
+    margin-bottom: 0.625em; /* Adiciona margem inferior */
+}
+
+input[type="radio"] {
+    margin-right: 0.625em; /* Adiciona margem à direita */
+}
+
+ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    margin-left: 0; /* Remove margem esquerda */
+    padding-left: 0; /* Remove padding esquerdo */
+}
+
+li {
+    cursor: pointer; /* Muda o cursor ao passar sobre o item */
+    padding: 0.3125em 0; /* Define padding vertical */
+}
+
+.scrollable-list {
+    max-height: 18.75em; /* Define altura máxima */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
+    border: 0.0625em solid #ccc; /* Define borda */
+    padding: 0.625em; /* Define padding interno */
+    border-radius: 0.3125em; /* Define bordas arredondadas */
+    margin-bottom: 1.25em; /* Adiciona margem inferior */
+}
+
+.selected-item {
+    background-color: #f5f5f5; /* Define cor de fundo */
+    padding: 0.625em; /* Define padding interno */
+    margin-bottom: 1.25em; /* Adiciona margem inferior */
+    border: 0.0625em solid #ccc; /* Define borda */
+    border-radius: 0.3125em; /* Define bordas arredondadas */
+}
+
+#selectedItem {
+    font-weight: bold; /* Define texto em negrito */
+}
+
+/* Estilização básica para o container */
+.container {
+    width: 80%; /* Define largura */
+    margin: auto; /* Centraliza horizontalmente */
+    padding: 1.25em; /* Define padding interno */
+    border: 0.0625em solid #ccc; /* Define borda */
+    border-radius: 0.625em; /* Define bordas arredondadas */
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    background-color: #f9f9f9; /* Define cor de fundo */
+}
+
+/* Estilização para o textarea */
+.styled-input-box {
+    width: 100%; /* Define largura */
+    padding: 0.625em; /* Define padding interno */
+    border: 0.0625em solid #ccc; /* Define borda */
+    border-radius: 0.3125em; /* Define bordas arredondadas */
+    box-sizing: border-box; /* Inclui borda e padding no tamanho total */
+    font-size: 1em; /* Define tamanho da fonte */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.styled-input-box:focus {
+    border-color: #66afe9; /* Muda cor da borda ao focar */
+    box-shadow: 0 0 0.5em rgba(102, 175, 233, 0.6); /* Adiciona sombra ao focar */
+}
+
+.input-box::placeholder {
+    color: #aaa; /* Define cor do placeholder */
+}
+
+#eventForm {
+    margin-top: 1.25em; /* Adiciona margem superior */
+}
+
+#eventForm label {
+    margin-bottom: 0.625em; /* Adiciona margem inferior */
+    display: block; /* Exibe o label como um bloco */
+}
+
+#eventForm input[type="datetime-local"] {
+    width: 100%; /* Define largura */
+    padding: 0.625em; /* Define padding interno */
+    margin-bottom: 0.625em; /* Adiciona margem inferior */
+    border: 0.0625em solid #ccc; /* Define borda */
+    border-radius: 0.3125em; /* Define bordas arredondadas */
+}
+
+#eventForm button {
+    padding: 0.625em 1.25em; /* Define padding interno */
+    background-color: #2a5f1f; /* Define cor de fundo */
+    color: #fff; /* Define cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 0.3125em; /* Define bordas arredondadas */
+    cursor: pointer; /* Define cursor */
+    transition: background-color 0.3s; /* Adiciona transição suave */
+}
+
+#eventForm button:hover {
+    background-color: #578a51; /* Muda cor de fundo ao passar o mouse */
+}
+
+.map-button, .button {
+    display: inline-block; /* Exibe como bloco inline */
+    padding: 0.625em 1.25em; /* Define padding interno */
+    background-color: #2a5f1f; /* Define cor de fundo */
+    color: #fff; /* Define cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 0.3125em; /* Define bordas arredondadas */
+    margin-right: 0.625em; /* Adiciona margem direita */
+    margin-bottom: 0.625em; /* Adiciona margem inferior */
+    transition: background-color 0.3s; /* Adiciona transição suave */
+}
+
+.map-button:hover, .button:hover {
+    background-color: #578a51; /* Muda cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o campo de entrada de texto */
+#campoTexto {
+    width: 100%; /* Ocupa toda a largura do seu container */
+    padding: 0.625em; /* Espaçamento interno */
+    border: 0.0625em solid #ccc; /* Borda com cor cinza claro */
+    border-radius: 0.3125em; /* Bordas arredondadas */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total do elemento */
+    margin-bottom: 0.625em; /* Espaçamento inferior */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Estilos para o botão "Buscar Trabalhador" */
+.button {
+    display: block; /* Torna o link um bloco, ocupando toda a largura disponível */
+    width: 100%; /* Ocupa toda a largura do seu container */
+    padding: 0.9375em; /* Espaçamento interno */
+    background-color: #2a5f1f; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branco */
+    text-align: center; /* Alinhamento do texto ao centro */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border: none; /* Remove a borda */
+    border-radius: 0.3125em; /* Bordas arredondadas */
+    font-size: 1.125em; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+}
+
+.button:hover {
+    background-color: #578a51; /* Cor de fundo verde mais clara ao passar o mouse */
+}

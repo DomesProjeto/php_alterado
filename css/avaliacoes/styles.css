@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('testimonials.css');
+
+
+* {
+    font-family: 'Poppins', sans-serif; /* Define a fonte Poppins como padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total dos elementos */
+}
+
+html {
+    scroll-behavior: smooth; /* Habilita rolagem suave */
+}
+
+body {
+    background-color: #e4e2dd; /* Define a cor de fundo do corpo da página */
+}
+
+section {
+    padding: 1.75em 8%; /* Adiciona padding às seções */
+}
+
+.btn-default:hover {
+    background-color: #68834d; /* Altera a cor de fundo ao passar o mouse sobre botões com a classe .btn-default */
+}
+
+.section-title {
+    color: #bba11e; /* Define a cor dos títulos das seções */
+    font-size: 2rem; /* Define o tamanho da fonte dos títulos das seções */
+}
+
+.section-subtitle {
+    font-size: 2.1875rem; /* Define o tamanho da fonte dos subtítulos das seções */
+}
+
+.return-button {
+    display: flex; /* Usa display flex para o layout do botão de retorno */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%; /* Define largura de 100% */
+}
+
+.return-button button {
+    width: 100%; /* Define largura de 100% para o botão */
+    margin-top: 2.5rem; /* Adiciona margem superior */
+    border: none; /* Remove borda */
+    background-color: #0c5f0c; /* Define a cor de fundo */
+    padding: 0.62rem; /* Adiciona padding */
+    border-radius: 0.313em; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão */
+}
+
+.return-button button:hover {
+    background-color: #185c3ff1; /* Altera a cor de fundo ao passar o mouse sobre o botão */
+}
+
+.return-button button a {
+    text-decoration: none; /* Remove sublinhado do link */
+    font-size: 0.93rem; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define a espessura da fonte */
+    color: #fff; /* Define a cor do texto */
+}
+
+.return-button span {
+    color:#fff; /* Define a cor do texto */
+}
+
+footer {
+    background-color: #5f9466c7; /* Define a cor de fundo do rodapé */
+}
+
+#footer_items {
+    display: flex; /* Usa display flex para o layout dos itens do rodapé */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    padding: 0em 8% 1.5em 8%; /* Adiciona padding ao redor dos itens do rodapé */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+#copyright {
+    color: white; /* Define a cor do texto */
+    font-size: large; /* Define o tamanho da fonte */
+}
+
+@media screen and (max-width:37.5em) { /* Estilos para telas menores que 37.5em (600px) */
+    #footer_items {
+        flex-direction: column; /* Altera a direção dos itens para coluna */
+        gap: 1.25em; /* Adiciona espaçamento entre os itens */
+    }
+}

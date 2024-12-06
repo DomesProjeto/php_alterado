@@ -1,0 +1,158 @@
+/* Reset de estilos para garantir uma base limpa */
+* {
+    margin: 0; /* Remove todas as margens */
+    padding: 0; /* Remove todo o preenchimento */
+    box-sizing: border-box; /* Mantém o modelo de caixa border-box */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo */
+    background-color: #f0f0f0; /* Define a cor de fundo do corpo */
+    padding: 1.25em; /* Adiciona preenchimento interno ao corpo */
+}
+
+.container {
+    max-width: 50em; /* Define a largura máxima da container */
+    margin: 0 auto; /* Centraliza a container na página */
+    background-color: #fff; /* Define a cor de fundo da container */
+    padding: 1.25em; /* Adiciona preenchimento interno à container */
+    border-radius: 0.313em; /* Define bordas arredondadas */
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    margin-bottom: 1.25em; /* Adiciona margem abaixo da container */
+}
+
+h1, h2, h3, h4 {
+    color: #17af12; /* Define a cor do texto dos títulos */
+    margin-bottom: 0.625em; /* Adiciona margem abaixo dos títulos */
+}
+
+fieldset {
+    border: 0.063em solid #ccc; /* Define a borda do fieldset */
+    padding: 0.625em; /* Adiciona preenchimento interno ao fieldset */
+    margin-bottom: 1.25em; /* Adiciona margem abaixo do fieldset */
+    border-radius: 0.313em; /* Define bordas arredondadas */
+}
+
+legend {
+    font-weight: bold; /* Define o peso da fonte do legend */
+    margin-bottom: 0.625em; /* Adiciona margem abaixo do legend */
+}
+
+label {
+    display: block; /* Exibe os labels como blocos */
+    margin-bottom: 0.625em; /* Adiciona margem abaixo dos labels */
+}
+
+input[type="radio"] {
+    margin-right: 0.625em; /* Adiciona margem à direita dos inputs do tipo rádio */
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    margin-left: 0; /* Remove a margem à esquerda */
+    padding-left: 0; /* Remove o preenchimento à esquerda */
+}
+
+li {
+    cursor: pointer; /* Define o cursor como ponteiro nos itens da lista */
+    padding: 0.313em 0; /* Adiciona preenchimento vertical nos itens da lista */
+}
+
+.scrollable-list {
+    max-height: 18.75em; /* Define a altura máxima da lista rolável */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical quando necessário */
+    border: 0.063em solid #ccc; /* Define a borda da lista rolável */
+    padding: 0.625em; /* Adiciona preenchimento interno à lista rolável */
+    border-radius: 0.313em; /* Define bordas arredondadas */
+    margin-bottom: 1.25em; /* Adiciona margem abaixo da lista rolável */
+}
+
+.selected-item {
+    background-color: #f5f5f5; /* Define a cor de fundo do item selecionado */
+    padding: 0.625em; /* Adiciona preenchimento interno ao item selecionado */
+    margin-bottom: 1.25em; /* Adiciona margem abaixo do item selecionado */
+    border: 0.063em solid #ccc; /* Define a borda do item selecionado */
+    border-radius: 0.313em; /* Define bordas arredondadas */
+}
+
+#selectedItem {
+    font-weight: bold; /* Define o peso da fonte para o elemento com id "selectedItem" */
+}
+
+#eventForm {
+    margin-top: 1.25em; /* Adiciona margem acima do formulário com id "eventForm" */
+}
+
+#eventForm label {
+    margin-bottom: 0.625em; /* Adiciona margem abaixo dos labels dentro do formulário com id "eventForm" */
+    display: block; /* Exibe os labels como blocos */
+}
+
+#eventForm input[type="datetime-local"] {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 0.625em; /* Adiciona preenchimento interno */
+    margin-bottom: 0.625em; /* Adiciona margem abaixo do input do tipo datetime-local */
+    border: 0.063em solid #ccc; /* Define a borda */
+    border-radius: 0.313em; /* Define bordas arredondadas */
+}
+
+#eventForm button {
+    padding: 0.625em 1.25em; /* Adiciona preenchimento interno ao botão */
+    background-color: #2a5f1f; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 0.313em; /* Define bordas arredondadas */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+#eventForm button:hover {
+    background-color: #578a51; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.map-button, .button {
+    display: inline-block; /* Exibe os elementos como blocos inline */
+    padding: 0.625em 1.25em; /* Adiciona preenchimento interno */
+    background-color: #2a5f1f; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+    text-decoration: none; /* Remove a decoração de texto */
+    border-radius: 0.313em; /* Define bordas arredondadas */
+    margin-right: 0.625em; /* Adiciona margem à direita */
+    margin-bottom: 0.625em; /* Adiciona margem abaixo */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+.map-button:hover, .button:hover {
+    background-color: #578a51; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Estilos para o campo de entrada de texto */
+#campoTexto {
+    width: 100%; /* Ocupa toda a largura do seu container */
+    padding: 0.625em; /* Espaçamento interno */
+    border: 0.063em solid #ccc; /* Borda com cor cinza claro */
+    border-radius: 0.313em; /* Bordas arredondadas */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total do elemento */
+    margin-bottom: 0.625em; /* Espaçamento inferior */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Estilos para o botão "Buscar Trabalhador" */
+.button {
+    display: block; /* Torna o link um bloco, ocupando toda a largura disponível */
+    width: 100%; /* Ocupa toda a largura do seu container */
+    padding: 0.938em; /* Espaçamento interno */
+    background-color: #2a5f1f; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    text-align: center; /* Alinhamento do texto ao centro */
+    text-decoration: none; /* Remove sublinhado padrão */
+    border: none; /* Remove a borda */
+    border-radius: 0.313em; /* Bordas arredondadas */
+    font-size: 1.125em; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+}
+
+.button:hover {
+    background-color: #578a51; /* Cor de fundo azul mais escura ao passar o mouse */
+}

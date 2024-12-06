@@ -1,0 +1,47 @@
+/* Estilos gerais para todo o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes para todo o corpo */
+    background-color: #f0f0f0; /* Cor de fundo do corpo da página */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    width: 80%; /* Largura do contêiner */
+    margin: auto; /* Centraliza o contêiner na página */
+    background-color: #fff; /* Cor de fundo do contêiner */
+    padding: 1.25em; /* Espaçamento interno do contêiner */
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do contêiner */
+}
+
+/* Estilos para o título principal */
+h1 {
+    color: #2e7d32; /* Cor do texto do título */
+    margin-bottom: 1.25em; /* Espaçamento inferior do título  */
+}
+
+/* Estilos para detalhes do serviço */
+.service-details {
+    margin-bottom: 1.25em; /* Espaçamento inferior dos detalhes do serviço  */
+}
+
+/* Estilos para parágrafos dentro de .service-details */
+.service-details p {
+    margin-bottom: 0.625em; /* Espaçamento inferior entre parágrafos  */
+}
+
+/* Estilos para o botão de cancelamento */
+.cancel-button {
+    background-color: #f44336; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 0.625em 1.25em; /* Espaçamento interno do botão  */
+    cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+    border-radius: 0.3125em; /* Borda arredondada do botão  */
+}
+
+/* Estilos quando o cursor está sobre o botão de cancelamento */
+.cancel-button:hover {
+    background-color: #d32f2f; /* Cor de fundo do botão ao passar o mouse */
+}

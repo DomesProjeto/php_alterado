@@ -1,0 +1,120 @@
+/* styles.css */
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes para o corpo do documento */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    background-color: #f4f4f4; /* Define a cor de fundo do corpo */
+    color: #333; /* Define a cor do texto */
+}
+
+/* Container principal */
+.container {
+    width: 80%; /* Largura do container principal */
+    max-width: 75em; /* Largura máxima do container */
+    margin: 1.25em auto; /* Margem superior e inferior de 20 pixels, centralizado horizontalmente */
+    padding: 1.25em; /* Preenchimento interno do container */
+    background-color: #fff; /* Cor de fundo do container */
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1); /* Sombra suave para o container */
+    border-radius: 0.5em; /* Borda arredondada do container */
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+    color: #2e7d32; /* Verde escuro para todos os títulos h1, h2, h3, h4 */
+}
+
+/* Formulário */
+fieldset {
+    border: 0.063em solid #2e7d32; /* Borda do fieldset */
+    border-radius: 0.5em; /* Borda arredondada do fieldset */
+    padding: 0.625em; /* Preenchimento interno do fieldset */
+    margin-bottom: 1.25em; /* Margem inferior do fieldset */
+}
+
+legend {
+    font-weight: bold; /* Define o peso da fonte para o título do fieldset */
+    color: #2e7d32; /* Cor do texto do título do fieldset */
+}
+
+label {
+    display: block; /* Faz com que as labels se comportem como blocos, ocupando toda a largura disponível */
+    margin-bottom: 0.625em; /* Margem inferior das labels */
+}
+
+/* Select largo */
+select {
+    width: 100%; /* Largura total do select */
+    padding: 0.625em; /* Preenchimento interno do select */
+    border: 0.063em solid #2e7d32; /* Borda do select */
+    border-radius: 0.25em; /* Borda arredondada do select */
+    margin-bottom: 1.25em; /* Margem inferior do select */
+    font-size: 1em; /* Tamanho da fonte do select */
+    background-color: #e8f5e9; /* Cor de fundo do select */
+}
+
+/* Botões e links */
+.button, .map-button {
+    display: inline-block; /* Faz com que os botões e links se comportem como blocos inline */
+    background-color: #4caf50; /* Cor de fundo dos botões e links */
+    color: white; /* Cor do texto dos botões e links */
+    padding: 0.625em 1.25em; /* Preenchimento interno dos botões e links */
+    text-align: center; /* Alinhamento do texto dentro dos botões e links */
+    text-decoration: none; /* Remove decoração de texto padrão */
+    margin: 0.625em 0; /* Margem superior e inferior */
+    border: none; /* Remove a borda dos botões e links */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    border-radius: 0.313em; /* Borda arredondada dos botões e links */
+}
+
+.button:hover, .map-button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse sobre os botões e links */
+}
+
+/* Input de texto e datetime-local */
+input[type="text"], input[type="datetime-local"] {
+    width: calc(100% - 1.375em); /* Largura do input de texto e datetime-local, ajustando para o padding e borda */
+    padding: 0.625em; /* Preenchimento interno do input de texto e datetime-local */
+    border: 0.063em solid #2e7d32; /* Borda do input de texto e datetime-local */
+    border-radius: 0.25em; /* Borda arredondada do input de texto e datetime-local */
+    margin-bottom: 1.25em; /* Margem inferior do input de texto e datetime-local */
+    font-size: 1em; /* Tamanho da fonte do input de texto e datetime-local */
+}
+
+/* Lista rolável */
+.scrollable-list {
+    max-height: 18.75em; /* Altura máxima da lista rolável */
+    overflow-y: auto; /* Habilita a rolagem vertical */
+    border: 0.063em solid #2e7d32; /* Borda da lista rolável */
+    padding: 0.625em; /* Preenchimento interno da lista rolável */
+    border-radius: 0.5em; /* Borda arredondada da lista rolável */
+    margin-bottom: 1.25em; /* Margem inferior da lista rolável */
+}
+
+.scrollable-list ul {
+    list-style-type: none; /* Remove o estilo padrão de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+.scrollable-list li {
+    padding: 0.625em; /* Preenchimento interno dos itens da lista */
+    border-bottom: 0.063em solid #e0e0e0; /* Borda inferior dos itens da lista */
+    cursor: pointer; /* Cursor do mouse como ponteiro nos itens da lista */
+}
+
+.scrollable-list li:hover {
+    background-color: #e8f5e9; /* Cor de fundo ao passar o mouse sobre os itens da lista */
+}
+
+.selected-item {
+    font-weight: bold; /* Define o peso da fonte do elemento com a classe .selected-item */
+    margin-top: 1.25em; /* Margem superior do elemento com a classe .selected-item */
+}
+
+/* Responsividade */
+@media (max-width: 48em) {
+    .container {
+        width: 95%; /* Largura do container principal ajustada para telas menores */
+    }
+}
